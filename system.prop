@@ -8,7 +8,7 @@ ro.postinstall.fstab.prefix=/system
 ro.sys.usb.storage.type=mtp
 
 # Misc
-ro.vendor.mediatek.platform=MT6886
+ro.vendor.mediatek.platform=MT6833
 
 # Timezone
 persist.sys.timezone="Asia/Shanghai"
