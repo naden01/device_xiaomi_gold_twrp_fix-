@@ -26,12 +26,10 @@ void vendor_load_properties()
     {
         property_override(string("ro.product.") + prop + string("brand"), "Redmi");
         property_override(string("ro.product.") + prop + string("manufacturer"), "Xiaomi");
-        property_override(string("ro.product.") + prop + string("name"), "zircon");
-        property_override(string("ro.product.") + prop + string("device"), "zircon");
-        property_override(string("ro.product.") + prop + string("model"), "23090RA98C");
-        property_override(string("ro.product.") + prop + string("marketname"), "Redmi Note13 Pro+");
-        property_override(string("ro.product.") + prop + string("cert"), "23090RA98C");
+        property_override(string("ro.product.") + prop + string("name"), "gold");
+        property_override(string("ro.product.") + prop + string("device"), "gold");
+        property_override(string("ro.product.") + prop + string("model"), "2312DRAABC");
+        property_override(string("ro.product.") + prop + string("marketname"), "Redmi Note 13 5G");
+        property_override(string("ro.product.") + prop + string("cert"), "2312DRAABC");
     }
-    property_override("ro.bootimage.build.date.utc", "1676018595");
-    property_override("ro.build.date.utc", "1676018595");
 }
