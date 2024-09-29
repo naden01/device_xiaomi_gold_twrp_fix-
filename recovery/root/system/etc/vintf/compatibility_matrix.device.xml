@@ -11,6 +11,7 @@
         vendor_framework_compatibility_matrix.xml
         capacitance_matrix.xml
         vendor_framework_compatibility_matrix.xml
+        vendor_framework_compatibility_matrix.xml
         fod_matrix.xml
         vendor_framework_compatibility_matrix.xml
         compatibility_matrix_displayfeature.xml
@@ -24,7 +25,9 @@
         vendor_framework_compatibility_matrix.xml
         vendor_framework_compatibility_matrix.xml
         vendor_framework_compatibility_matrix.xml
+        vendor_framework_compatibility_matrix.xml
         vendor.xiaomi.cit.wifi@1.0_compatibility_matrix.xml
+        vendor_framework_compatibility_matrix.xml
         vendor_framework_compatibility_matrix.xml
 -->
 <compatibility-matrix version="4.0" type="framework">
@@ -940,6 +943,22 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>vendor.tms.tmsese</name>
+        <version>1.0</version>
+        <interface>
+            <name>ITmsEse</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.tms.tmsnfc</name>
+        <version>1.0</version>
+        <interface>
+            <name>ITmsNfc</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>vendor.trustonic.tee</name>
         <version>1.1</version>
         <interface>
@@ -1052,6 +1071,14 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>vendor.xiaomi.hardware.mimd</name>
+        <version>1.0</version>
+        <interface>
+            <name>IMimd</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>vendor.xiaomi.hardware.miperf</name>
         <version>1.0</version>
         <interface>
@@ -1099,6 +1126,27 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.xiaomi.hardware.mrm</name>
+        <interface>
+            <name>IMrm</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.xiaomi.hardware.mrm</name>
+        <interface>
+            <name>IMiCertificate</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.xiaomi.hardware.mrm</name>
+        <interface>
+            <name>IMrmRemoteAuth</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.xiaomi.hardware.mtdservice</name>
         <version>1.0-3</version>
@@ -1136,6 +1184,14 @@
         <version>1.0</version>
         <interface>
             <name>ITouchFeature</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.xiaomi.hardware.videoservice</name>
+        <version>1.0</version>
+        <interface>
+            <name>IVideoService</name>
             <instance>default</instance>
         </interface>
     </hal>
