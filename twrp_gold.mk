@@ -33,10 +33,10 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 $(call inherit-product, device/xiaomi/zircon/device.mk)
 
 # Device identifier
-PRODUCT_DEVICE := zircon
-PRODUCT_NAME := twrp_zircon
+PRODUCT_DEVICE := gold
+PRODUCT_NAME := twrp_gold
 PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := 23090RA98C
+PRODUCT_MODEL := 2312DRAABC
 PRODUCT_MANUFACTURER := Xiaomi
 
 # Hide Reflash TWRP
