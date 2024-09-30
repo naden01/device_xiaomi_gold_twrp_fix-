@@ -6,7 +6,7 @@
 # You may obtain a copy of the License at
 #
 #     http://www.apache.org/licenses/LICENSE-2.0
-#l
+#
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -17,8 +17,8 @@
 # Configure base.mk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 
-# Configure core_64_bit.mk
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+# Configure core_64_bit_only.mk
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 
 # Configure launch_with_vendor_ramdisk.mk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
@@ -29,8 +29,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 # Configure twrp config common.mk
 $(call inherit-product, vendor/twrp/config/common.mk)
 
+# Configure compression
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression.mk)
+
 # Device specific configs
 $(call inherit-product, device/xiaomi/gold/device.mk)
+
+# Configure virtual_ab_ota.mk
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
 # Device identifier
 PRODUCT_DEVICE := gold
@@ -38,6 +44,9 @@ PRODUCT_NAME := twrp_gold
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := 2312DRAABC
 PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_RELEASE_NAME := Xiaomi Redmi Note 13 5G
 
-# Hide Reflash TWRP
-PRODUCT_PROPERTY_OVERRIDES += ro.twrp.vendor_boot=true
+# Hide Reflash TWRP & FUSE passthrough
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.twrp.vendor_boot=true \
+    persist.sys.fuse.passthrough.enable=true
