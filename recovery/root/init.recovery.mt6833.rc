@@ -1,4 +1,4 @@
-import /keymint.service./mitee.rc
+import /keymint.service.mitee.rc
 import /tee-supplicant.rc
 import /miteelog.rc
 
