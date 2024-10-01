@@ -160,7 +160,7 @@ jobs:
         body: |
           Manifest: ${{ github.event.inputs.MANIFEST_BRANCH }}
           Device: ${{ github.event.inputs.DEVICE_NAME }}
-          Target: vendor_boot.img
-          Version:Android13
+          Build Target: ${{ github.event.inputs.BUILD_TARGET }}
+          Android Version: ${{ github.event.inputs.DEVICE_TREE_BRANCH }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
