@@ -157,6 +157,10 @@ TW_LOAD_VENDOR_MODULES := "ft3683g.ko gt9916r.ko"
 # Verified Boot
 BOARD_AVB_ENABLE := true
 
+# init
+TARGET_INIT_VENDOR_LIB := libinit_gold
+TARGET_RECOVERY_DEVICE_MODULES := libinit_gold
+
 # TWRP Configurations
 TW_FRAMERATE := 60
 TW_THEME := portrait_hdpi
