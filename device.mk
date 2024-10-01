@@ -129,6 +129,11 @@ PRODUCT_PACKAGES += \
     mtk_plpath_utils \
     mtk_plpath_utils.recovery
 
+# fastbootd
+PRODUCT_PACKAGES += \
+    android.hardware.fastboot@1.1-impl-mock \
+    fastbootd
+
 # Hidl Service
 PRODUCT_ENFORCE_VINTF_MANIFEST := true
 
