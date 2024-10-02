@@ -192,7 +192,7 @@ TW_EXCLUDE_TWRPAPP := true
 TW_USE_SERIALNO_PROPERTY_FOR_DEVICE_ID := true
 TW_USE_TOOLBOX := true
 TARGET_USES_MKE2FS := true
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.usb0/lun.0/file
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.usb0/lun.%d/file
 
 TW_DEFAULT_LANGUAGE := en
 TW_INPUT_BLACKLIST := "hbtp_vm"
