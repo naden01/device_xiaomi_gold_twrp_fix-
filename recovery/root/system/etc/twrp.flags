@@ -58,5 +58,5 @@
 /pi_img             emmc      /dev/block/by-name/pi_img                                             flags=display="pi_img"
 
 # Removable storage
-/usb_otg            auto      /dev/block/sdd1                                                       flags=display="usb-otg";storage;wipeingui;removable;fsflags=utf8
+/usb_otg            auto      /dev/block/sdd1                                                       flags=display="USB OTG";storage;wipeingui;removable;fsflags=utf8
 /external_sd        auto      /dev/block/mmcblk0p1         /dev/block/mmcblk0                       flags=display="Micro SD Card";storage;wipeingui;removable
